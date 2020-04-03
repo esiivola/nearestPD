@@ -32,6 +32,10 @@ nearestPD and isPD are copied from https://github.com/alan-turing-institute/bocp
 This implementation is just a minor modification to the python implementation to make it importable without copy paste
 '''
 
+import numpy as np
+from typing import Tuple
+from numpy import linalg as la
+
 def nearestPD(A: np.ndarray) -> Tuple[np.ndarray, float]:
     """
     Find the nearest positive-definite matrix to input A.
